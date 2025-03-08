@@ -22,3 +22,12 @@ function listar(){
         lista.appendChild(item)
     }
 }
+
+function sortearAmigo(){
+    if (amigos.length === 0){
+        alert('No hay amigos para sortear')
+    }else{
+        let amigoSorteado = amigos[Math.floor(Math.random() * amigos.length)]
+        document.getElementById('resultado').innerHTML = '🎉 ' + amigoSorteado
+    }
+}
